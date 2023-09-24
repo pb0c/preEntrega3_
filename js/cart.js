@@ -66,7 +66,8 @@ const miLocalStorage = window.localStorage;
             
             const miNodo = document.createElement('li');
             miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-            miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${divisa}${miItem[0].precio}`;
+            miNodo.textContent = numeroUnidadesItem + ' x ' + miItem[0].nombre + ' - ' + divisa + miItem[0].precio;
+
             
             //boton borrar
             const miBoton = document.createElement('button');
